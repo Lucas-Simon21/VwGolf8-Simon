@@ -585,3 +585,7 @@ footer{
 .nowr{
  flex-wrap: nowrap;
 }
+
+*, ::after, ::before {
+  box-sizing: content-box;
+}
