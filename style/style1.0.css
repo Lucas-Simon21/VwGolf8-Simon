@@ -189,8 +189,8 @@ background-color: white;
 .fond{
  background-color: #003F75;
  color: white;
- margin: 0px 620px 50px 150px;
- padding: 1px 0px 50px;
+ margin: 5%;
+ padding: 2%;
 }
 
 .imgserv{
@@ -463,7 +463,7 @@ footer{
 .indsub{
   font-size: 25px;
  }
-
+}
  
  .foot{
   padding: 1px;
@@ -589,3 +589,138 @@ footer{
 *, ::after, ::before {
   box-sizing: content-box;
 }
+
+.mainsserv{
+  margin: 0 40%;
+  width: 100%;
+}
+
+.sergrid{
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "h1serv h1serv"
+  "h2grid h2grid"
+  "pgrid pgrid"
+  "imggrid imggird"
+  "footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+ }
+
+ .h1serv{
+  grid-area: h1serv;
+ }
+
+ .h2grid{
+  grid-area: h2grid;
+ }
+.pgrid{
+  grid-area: pgrid;
+}
+.imggrid{
+  grid-area: imggrid;
+}
+
+ /* Celular Servicio */
+
+@media screen and (max-width: 480px) {
+  .sergrid{
+     grid-template-areas: 
+     "header"
+     "h1serv"
+     "h2grid"
+     "pgrid"
+     "imggrid"
+     "footer";
+     grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
+     grid-template-columns: 1fr;
+  }
+  .mainsserv{
+    margin: 0px;
+  }
+ } 
+ 
+ /* Tablet Servicio */
+ @media screen and (min-width: 481px) and (max-width: 1511px) {
+  .sergrid{
+    grid-template-areas: 
+    "header"
+    "h1serv"
+    "h2grid"
+    "pgrid"
+    "imggrid"
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
+    grid-template-columns: 1fr;
+ }
+ .mainsserv{
+  margin: 0px;
+ }
+ }
+
+ .contagrid{
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "h1serv h1serv"
+  "h2grid h2grid"
+  "pgrid pgrid"
+  "imggrid imggird"
+  "footer footer";
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+ }
+
+ .h1serv{
+  grid-area: h1serv;
+ }
+
+ .h2grid{
+  grid-area: h2grid;
+ }
+.pgrid{
+  grid-area: pgrid;
+}
+.imggrid{
+  grid-area: imggrid;
+}
+
+ /* Celular Servicio */
+
+@media screen and (max-width: 480px) {
+  .sergrid{
+     grid-template-areas: 
+     "header"
+     "h1serv"
+     "h2grid"
+     "pgrid"
+     "imggrid"
+     "footer";
+     grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
+     grid-template-columns: 1fr;
+  }
+  .mainsserv{
+    margin: 0px;
+  }
+ } 
+ 
+ /* Tablet Servicio */
+ @media screen and (min-width: 481px) and (max-width: 1511px) {
+  .sergrid{
+    grid-template-areas: 
+    "header"
+    "h1serv"
+    "h2grid"
+    "pgrid"
+    "imggrid"
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
+    grid-template-columns: 1fr;
+ }
+ .mainsserv{
+  margin: 0px;
+ }
+ }
