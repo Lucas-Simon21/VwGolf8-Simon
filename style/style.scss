@@ -1,3 +1,29 @@
+@import "./partials/header";
+@import "./partials/footer";
+
+footer{
+  background-image: linear-gradient(to right bottom, #003f75, #205183, #366390, #4b759d, #6188aa);
+  height: 160px;
+  color: white;
+ }
+ 
+ .fot1{
+   text-decoration: none;
+   color: white;
+   padding: 5px;
+ }
+ 
+ .redso{
+   font-style: bold;
+ }
+ .foot{
+   padding: 15px 0px 0px 15px
+ }
+ 
+ .afoot{
+   padding: 10px;
+ }
+
 *{
     margin: 0;
     font-family: "vwtext-regular";
@@ -9,55 +35,6 @@
   @font-face {
     font-family: "vwtext-regular";
     src: url(../Tipografia/vw/VWText-Regular.otf);
-  }
-  
-
-  .indgrid{
-   display: grid;
-   grid-template-areas: 
-   "header header"
-   "indimg indtit"
-   "indimg indsub"
-   "footer footer";
-   grid-template-rows: 1fr 1fr 2fr 1fr;
-   grid-template-columns: repeat(2, 1fr);
-   height: 100vh;
-  } 
-  
-  header{
-   grid-area: header;
-  }
-  
-  footer{
-   grid-area: footer;
-  }
-  
-  .indtit{
-   grid-area: indtit;
-  }
-  
-  
-  .indimg{
-   grid-area: indimg;
-  }
-  
-  .indsub{
-   grid-area: indsub;
-  }
-  
-  .texts{
-    grid-area: texts;
-    padding: 50px;
-  }
-  
-  .imgs{
-    grid-area: imgs;
-    width: 90%;
-    margin: 2%;
-  }
-  
-  .indpad{
-   padding: 5%;
   }
   
   h1{
@@ -85,71 +62,7 @@
     padding: 0px 305px 10px;
     font-size: 34px;
   }
-  
-  .btn1{
-    margin: 10px;
-    padding: 20px;
-    text-decoration: none;
-    color: #003F75;
-    font-size: 25px;
-  }
 
-  .animacionDos {
-    animation-name: efectoDos;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 10s;
-    animation-delay: 0s;
-   }
-   
-   @keyframes efectoDos {
-    0% {
-      transform: scale(1, 1);
-    }
-    25% {
-      transform: scale(0.75, 0.75);
-    }
-    50% {
-      transform: scale(1, 1);
-    }
-    75% {
-      transform: scale(0.75, 0.75);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-   }
-  
-  .btn2{
-    margin: -40px 0px 0px 545px;
-    padding: 0px;
-    width: 170px;
-    height: 100px;
-  }
-  
-  footer{
-   background-image: linear-gradient(to right bottom, #003f75, #205183, #366390, #4b759d, #6188aa);
-   height: 160px;
-   color: white;
-  }
-  
-  .fot1{
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-  }
-  
-  .redso{
-    font-style: bold;
-  }
-  .foot{
-    padding: 15px 0px 0px 15px
-  }
-  
-  .afoot{
-    padding: 10px;
-  }
-  
   .tit{
    font-size: 90px;
   }
@@ -186,15 +99,15 @@
    border-radius: 5px;
    background-color: #003F75;
    color: white;
+
+   &:hover{
+     color: black;
+     border: 1px solid black;
+     background-color: white;
+     transition: 2s;
+   }
   }
-  
-  .boton:hover{
-   color: black;
-   border: 1px solid black;
-   background-color: white;
-   transition: 2s;
-  }
-  
+
   footer a:hover{
   color: #003F75;
   background-color: white;
@@ -243,17 +156,19 @@
    border-radius: 5px;
    background-color: #ffffff;
    color: #003F75;
+
+   &:hover{
+     border: 2px solid #ffffff;
+     margin: 10px;
+     padding: 10px 30px;
+     text-decoration: none;
+     border-radius: 5px;
+     background-color: #003f75;
+     color: #ffffff;
+     transition: 1.5s;
+   }
   }
-  .turno:hover{
-   border: 2px solid #ffffff;
-   margin: 10px;
-   padding: 10px 30px;
-   text-decoration: none;
-   border-radius: 5px;
-   background-color: #003f75;
-   color: #ffffff;
-   transition: 1.5s;
-  }
+
   
   .forms{
    width: 1111px;
@@ -322,117 +237,10 @@
   .em{
    font-size: 20px;
   }
-  
-  
-  .modgrid{
-   display: grid;
-   grid-template-areas: 
-   "header header header"
-   "h1 h1 h1"
-   "modimg1 modimg2 modimg3"
-   "modtex1 modtex2 modtex3"
-   "modbot1 modbot2 modbot3"
-   "footer footer footer";
-   grid-template-rows: 1fr 1fr 3fr 1fr 1fr 1fr;
-   grid-template-columns: repeat(3, 1fr);
-   height: 100vh;
-  }
-  
-  .h1mod{
-   grid-area: h1;
-  }
-  
-  .headmod{
-   grid-area: header;
-  }
-  
-  footer{
-   grid-area: footer;
-  }
-  
-  .modimg1{
-   grid-area: modimg1;
-  }
-  
-  .modimg2{
-   grid-area: modimg2;
-  }
-  
-  .modimg3{
-   grid-area: modimg3;
-  }
-  
-  .modtex1{
-   grid-area: modtex1;
-  }
-  
-  .modtex2{
-   grid-area: modtex2;
-  }
-  
-  .modtex3{
-   grid-area: modtex3;
-  }
-  
-  .modbot1{
-   grid-area: modbot1;
-  }
-  
-  .modbot2{
-   grid-area: modbot2;
-  }
-  
-  .modbot3{
-   grid-area: modbot3;
-  }
-  
   .ims{
    height: 100%;
    width: 100%;
   }
-  
-  .tecgrid{
-   display: grid;
-   grid-template-areas: 
-   "header header"
-   "h1 h1"
-   "tectex1 tecimg1"
-   "tecimg2 tectex2"
-   "footer footer";
-   grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
-   grid-template-columns: repeat(2, 1fr);
-   height: 100vh;
-  }
-  
-  .h1tec{
-   grid-area: h1;
-  }
-  
-  .headtec{
-   grid-area: header;
-  }
-  
-  footer{
-   grid-area: footer;
-  }
-  
-  .tectex1{
-   grid-area: tectex1;
-  }
-  
-  .tecimg1{
-   grid-area: tecimg1;
-  }
-  
-  .tecimg2{
-   grid-area: tecimg2;
-  }
-  
-  .tectex2{
-   grid-area: tectex2;
-   padding: auto;
-  }
-  
   .padtec{
    margin: 0px 10%;
   }
@@ -461,112 +269,6 @@
   .mar3{
    margin: 3% 3%;
   }
-  
-  /* Celular Index */
-  @media screen and (max-width: 480px) {
-   .indgrid{
-      grid-template-areas: 
-      "header"
-      "indtit"
-      "indsub"
-      "indimg"
-      "footer";
-      grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-      grid-template-columns: 1fr;
-   }   */
-  
-  .btn2{
-    margin: 1px;
-  }
-  
-  .tit{
-    font-size: 58px;
-  }
-  
-  .redtext{
-    width: 90%;
-  }
-  
-  .indsub{
-    font-size: 25px;
-   }
-  }
-   
-   .foot{
-    padding: 1px;
-   } */
-  
-  /* Tablet Index  */
-  @media screen and (min-width: 481px) and (max-width: 1511px) {
-   .indgrid{
-      grid-template-areas: 
-      "header"
-      "indtit"
-      "indsub"
-      "indimg"
-      "footer";
-      grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-      grid-template-columns: 1fr;
-   }  
-  
-   .tit{
-    padding: 2% 2%;
-   }
-  
-   .tit2{
-    padding: 1% 7%;
-   }
-  
-   .btn2{
-    margin: 1px;
-   }
-  }
-  
-  /* Celular Modelo */
-  
-  @media screen and (max-width: 480px) {
-   .modgrid{
-      grid-template-areas: 
-      "header"
-      "h1"
-      "modimg1"
-      "modtex1"
-      "modbot1"
-      "modimg2"
-      "modtex2"
-      "modbot2"
-      "modimg3"
-      "modtex3"
-      "modbot3"
-      "footer";
-      grid-template-rows: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-   }
-   
-  } 
-  
-  /* Tablet Index */
-  @media screen and (min-width: 481px) and (max-width: 1511px) {
-   .modgrid{
-      grid-template-areas: 
-      "header"
-      "h1"
-      "modimg1"
-      "modtex1"
-      "modbot1"
-      "modimg2"
-      "modtex2"
-      "modbot2"
-      "modimg3"
-      "modtex3"
-      "modbot3"
-      "footer";
-      grid-template-rows: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-   }
-  }
-  
- 
   
   .imgauto{
    width: 50%;
@@ -597,6 +299,262 @@
     margin: 0 40%;
     width: 100%;
   }
+
+  .indgrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "indimg indtit"
+    "indimg indsub"
+    "footer footer";
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+   } 
+   
+   header{
+    grid-area: header;
+   }
+   
+   footer{
+    grid-area: footer;
+   }
+   
+   .indtit{
+    grid-area: indtit;
+   }
+   
+   
+   .indimg{
+    grid-area: indimg;
+   }
+   
+   .indsub{
+    grid-area: indsub;
+   }
+   
+   .texts{
+     grid-area: texts;
+     padding: 50px;
+   }
+   
+   .imgs{
+     grid-area: imgs;
+     width: 90%;
+     margin: 2%;
+   }
+   
+   .indpad{
+    padding: 5%;
+   }
+  
+   /* Celular Index */
+  @media screen and (max-width: 480px) {
+    .indgrid{
+       grid-template-areas: 
+       "header"
+       "indtit"
+       "indsub"
+       "indimg"
+       "footer";
+       grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+       grid-template-columns: 1fr;
+    }   */
+   
+   .btn2{
+     margin: 1px;
+   }
+   
+   .tit{
+     font-size: 58px;
+   }
+   
+   .redtext{
+     width: 90%;
+   }
+   
+   .indsub{
+     font-size: 25px;
+    }
+   }
+    
+    .foot{
+     padding: 1px;
+    }
+  
+   /* Tablet Index  */
+   @media screen and (min-width: 481px) and (max-width: 1511px) {
+    .indgrid{
+       grid-template-areas: 
+       "header"
+       "indtit"
+       "indsub"
+       "indimg"
+       "footer";
+       grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+       grid-template-columns: 1fr;
+    }  
+   
+    .tit{
+     padding: 2% 2%;
+    }
+   
+    .tit2{
+     padding: 1% 7%;
+    }
+   
+    .btn2{
+     margin: 1px;
+    }
+   }
+  
+  .modgrid{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "h1 h1 h1"
+    "modimg1 modimg2 modimg3"
+    "modtex1 modtex2 modtex3"
+    "modbot1 modbot2 modbot3"
+    "footer footer footer";
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+   }
+   
+   .h1mod{
+    grid-area: h1;
+   }
+   
+   .headmod{
+    grid-area: header;
+   }
+   
+   footer{
+    grid-area: footer;
+   }
+   
+   .modimg1{
+    grid-area: modimg1;
+   }
+   
+   .modimg2{
+    grid-area: modimg2;
+   }
+   
+   .modimg3{
+    grid-area: modimg3;
+   }
+   
+   .modtex1{
+    grid-area: modtex1;
+   }
+   
+   .modtex2{
+    grid-area: modtex2;
+   }
+   
+   .modtex3{
+    grid-area: modtex3;
+   }
+   
+   .modbot1{
+    grid-area: modbot1;
+   }
+   
+   .modbot2{
+    grid-area: modbot2;
+   }
+   
+   .modbot3{
+    grid-area: modbot3;
+   }
+  
+  /* Celular Modelo */
+  
+  @media screen and (max-width: 480px) {
+    .modgrid{
+       grid-template-areas: 
+       "header"
+       "h1"
+       "modimg1"
+       "modtex1"
+       "modbot1"
+       "modimg2"
+       "modtex2"
+       "modbot2"
+       "modimg3"
+       "modtex3"
+       "modbot3"
+       "footer";
+       grid-template-rows: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr;
+    }
+    
+   } 
+   
+   /* Tablet Modelo */
+   @media screen and (min-width: 481px) and (max-width: 1511px) {
+    .modgrid{
+       grid-template-areas: 
+       "header"
+       "h1"
+       "modimg1"
+       "modtex1"
+       "modbot1"
+       "modimg2"
+       "modtex2"
+       "modbot2"
+       "modimg3"
+       "modtex3"
+       "modbot3"
+       "footer";
+       grid-template-rows: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr;
+    }
+   }
+  
+  .tecgrid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "h1 h1"
+    "tectex1 tecimg1"
+    "tecimg2 tectex2"
+    "footer footer";
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+   }
+   
+   .h1tec{
+    grid-area: h1;
+   }
+   
+   .headtec{
+    grid-area: header;
+   }
+   
+   footer{
+    grid-area: footer;
+   }
+   
+   .tectex1{
+    grid-area: tectex1;
+   }
+   
+   .tecimg1{
+    grid-area: tecimg1;
+   }
+   
+   .tecimg2{
+    grid-area: tecimg2;
+   }
+   
+   .tectex2{
+    grid-area: tectex2;
+    padding: auto;
+   }
   
   .sergrid{
     display: grid;
@@ -663,7 +621,7 @@
    }
    }
   
-   .contagrid{
+  .contagrid{
     display: grid;
     grid-template-areas: 
     "header header"
@@ -690,40 +648,6 @@
   .imggrid{
     grid-area: imggrid;
   }
-  
-   /* Celular Servicio */
-  
-  @media screen and (max-width: 480px) {
-    .sergrid{
-       grid-template-areas: 
-       "header"
-       "h1serv"
-       "h2grid"
-       "pgrid"
-       "imggrid"
-       "footer";
-       grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
-       grid-template-columns: 1fr;
-    }
-    .mainsserv{
-      margin: 0px;
-    }
-   } 
-   
-   /* Tablet Servicio */
-   @media screen and (min-width: 481px) and (max-width: 1511px) {
-    .sergrid{
-      grid-template-areas: 
-      "header"
-      "h1serv"
-      "h2grid"
-      "pgrid"
-      "imggrid"
-      "footer";
-      grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr ;
-      grid-template-columns: 1fr;
-   }
-   .mainsserv{
-    margin: 0px;
-   }
-   }
+
+  @import "./partials/footer";
+  @import "./partials/header"
