@@ -194,9 +194,8 @@ background-color: white;
 }
 
 .imgserv{
- width: 900px;
- height: 580px;
- margin: 25px;
+ width: 90%;
+ margin: 6%;
 }
 
 .h2serv{
@@ -364,76 +363,7 @@ footer{
  width: 100%;
 }
 
-.tecgrid{
- display: grid;
- grid-template-areas: 
- "header header"
- "h1 h1"
- "tectex1 tecimg1"
- "tecimg2 tectex2"
- "footer footer";
- grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
- grid-template-columns: repeat(2, 1fr);
- height: 100vh;
-}
 
-.h1tec{
- grid-area: h1;
-}
-
-.headtec{
- grid-area: header;
-}
-
-footer{
- grid-area: footer;
-}
-
-.tectex1{
- grid-area: tectex1;
-}
-
-.tecimg1{
- grid-area: tecimg1;
-}
-
-.tecimg2{
- grid-area: tecimg2;
-}
-
-.tectex2{
- grid-area: tectex2;
- padding: auto;
-}
-
-.padtec{
- margin: 0px 10%;
-}
-
-.pad2tec{
- padding: 5% 9%;
-}
-
-.textecno{
- width: 77%;
- padding: 3% 0%;
-}
-
-.bord{
- border: 2px solid black;
-}
-
-.pad1{
- padding: 2%;
-}
-
-.mar5{
- margin: 5% 1%;
-}
-
-.mar3{
- margin: 3% 3%;
-}
 
 /* Celular Index */
 @media screen and (max-width: 480px) {
@@ -538,6 +468,111 @@ footer{
     grid-template-columns: 1fr;
  }
 }
+
+.tecgrid{
+  display: grid;
+  grid-template-areas: 
+  "header header"
+  "h1 h1"
+  "tectex1 tecimg1"
+  "tecimg2 tectex2"
+  "footer footer";
+  grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+ }
+ 
+ .h1tec{
+  grid-area: h1;
+ }
+ 
+ .headtec{
+  grid-area: header;
+ }
+ 
+ footer{
+  grid-area: footer;
+ }
+ 
+ .tectex1{
+  grid-area: tectex1;
+ }
+ 
+ .tecimg1{
+  grid-area: tecimg1;
+ }
+ 
+ .tecimg2{
+  grid-area: tecimg2;
+ }
+ 
+ .tectex2{
+  grid-area: tectex2;
+  padding: auto;
+ }
+ 
+ .padtec{
+  margin: 0px 10%;
+ }
+ 
+ .pad2tec{
+  padding: 5% 9%;
+ }
+ 
+ .textecno{
+  width: 77%;
+  padding: 3% 0%;
+ }
+ 
+ .bord{
+  border: 2px solid black;
+ }
+ 
+ .pad1{
+  padding: 2%;
+ }
+ 
+ .mar5{
+  margin: 5% 1%;
+ }
+ 
+ .mar3{
+  margin: 3% 3%;
+ }
+
+ /* Celular Tecnologia */
+
+ @media screen and (max-width: 480px) {
+  .tecgrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "tectex1" 
+    "tecimg1"
+    "tectex2"
+    "tecimg2" 
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+   }
+  }
+ /* Tablet Tecnologia */
+ @media screen and (min-width: 481px) and (max-width: 1511px) {
+  .tecgrid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "tectex1" 
+    "tecimg1"
+    "tectex2"
+    "tecimg2" 
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+   }
+ }
 
 .animacionDos {
  animation-name: efectoDos;
@@ -687,7 +722,7 @@ footer{
 .imggrid{
   grid-area: imggrid;
 }
-
+ 
  /* Celular Servicio */
 
 @media screen and (max-width: 480px) {
@@ -723,4 +758,8 @@ footer{
  .mainsserv{
   margin: 0px;
  }
+ }
+
+ .textstar{
+  text-align: start;
  }
