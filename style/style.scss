@@ -1,28 +1,6 @@
-@import "./partials/header";
+@import "./partials/color";
 @import "./partials/footer";
-
-footer{
-  background-image: linear-gradient(to right bottom, #003f75, #205183, #366390, #4b759d, #6188aa);
-  height: 160px;
-  color: $colorsecundario;
- }
- 
- .fot1{
-   text-decoration: none;
-   color: $colorsecundario;
-   padding: 5px;
- }
- 
- .redso{
-   font-style: bold;
- }
- .foot{
-   padding: 15px 0px 0px 15px
- }
- 
- .afoot{
-   padding: 10px;
- }
+@import "./partials/header";
 
 *{
     margin: 0;
@@ -649,6 +627,3 @@ footer{
     grid-area: imggrid;
   }
 
-  @import "./partials/footer";
-  @import "./partials/header";
-  @import "./partials/color";
