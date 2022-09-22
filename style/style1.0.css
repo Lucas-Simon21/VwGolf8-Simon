@@ -446,6 +446,9 @@ footer{
     grid-template-columns: 1fr;
  }
  
+ .btn2{
+  margin: 0px;
+ }
 } 
 
 /* Tablet Index */
@@ -466,6 +469,9 @@ footer{
     "footer";
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+ }
+ .btn2{
+  margin: 0px;
  }
 }
 
@@ -556,6 +562,31 @@ footer{
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-columns: 1fr;
    }
+   .btn2{
+    margin: 0px;
+   }
+
+   .heigtec{
+    width: 100%;
+    margin: 0px;
+   }
+
+   .imgtec{
+    height: 100%;
+    width: 100%;
+   }
+   .tex{
+    height: 100%;
+   }
+   .imgtec1{
+    padding: 0px;
+   }
+   .pad25{
+    padding: 5%;
+   }
+   .pad1{
+    padding: 0px;
+   }
   }
  /* Tablet Tecnologia */
  @media screen and (min-width: 481px) and (max-width: 1511px) {
@@ -571,6 +602,9 @@ footer{
     "footer";
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
     grid-template-columns: 1fr;
+   }
+   .btn2{
+    margin: 0px;
    }
  }
 
@@ -675,6 +709,9 @@ footer{
   .mainsserv{
     margin: 0px;
   }
+  .btn2{
+    margin: 0px;
+   }
  } 
  
  /* Tablet Servicio */
@@ -691,6 +728,9 @@ footer{
     grid-template-columns: 1fr;
  }
  .mainsserv{
+  margin: 0px;
+ }
+ .btn2{
   margin: 0px;
  }
  }
@@ -740,6 +780,9 @@ footer{
   .mainsserv{
     margin: 0px;
   }
+  .btn2{
+    margin: 0px;
+   }
  } 
  
  /* Tablet Servicio */
@@ -758,8 +801,13 @@ footer{
  .mainsserv{
   margin: 0px;
  }
+ .btn2{
+  margin: 0px;
+ }
  }
 
  .textstar{
   text-align: start;
  }
+
+ 
