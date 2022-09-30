@@ -348,7 +348,7 @@ footer a:hover {
   "indimg indtit"
   "indimg indsub"
   "footer footer";
-  grid-template-rows: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
   grid-template-columns: repeat(2, 1fr);
   height: 100vh;
  } 
@@ -688,4 +688,39 @@ footer a:hover {
 }
 .imggrid{
   grid-area: imggrid;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.booton1{
+  background-color: #d51709;
+  border-bottom: 5px solid #8c1007;
+}
+
+.booton2{
+  background-color: #096cd5;
+  border-bottom: 5px solid #053b75
+}
+
+.booton3{
+  background-color: #dc2c87;
+  border-bottom: 5px solid #961c5b
+}
+
+.botontec1{
+  border: 3px solid;
+  margin: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #4192d8;
+  color: #000000;
+  }
+  
+  .botontec2{
+    border: 5px solid #62f904;
+    margin: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #1bdb71;
+    color: #483333;
+  }/*# sourceMappingURL=style.css.map */

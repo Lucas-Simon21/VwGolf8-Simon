@@ -1,0 +1,25 @@
+.booton1{
+    @extend %botonprincipal;
+    background-color: #d51709;
+    border-bottom: 2px solid #8c1007;
+}
+
+.booton2{
+    @extend %botonprincipal;
+    background-color: #096cd5;
+    border-bottom: 2px solid #053b75
+}
+
+.booton3{
+    @extend %botonprincipal;
+    background-color: #dc2c87;
+    border-bottom: 2px solid #961c5b
+}
+
+.botontec1{
+@include botontec1 ($border: 3px solid, $backcolor: #4192d8, $colortext: #000000)
+}
+
+.botontec2{
+@include botontec1 ($border: 1px solid #62f904, $backcolor: #1bdb71, $colortext: #483333)
+}

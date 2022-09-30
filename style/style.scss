@@ -1,6 +1,10 @@
+@import "./partials/maps";
 @import "./partials/color";
+@import "./partials/extends";
+@import "./partials/mixins";
 @import "./partials/footer";
 @import "./partials/header";
+@import "./partials/botones";
 
 *{
     margin: 0;
@@ -17,13 +21,13 @@
   
   h1{
     font-family: "vwtext-bold";
-    font-size: 70px;
+    font-size: map-get($font-size, fontsizeh1);
   }
   nav{
     text-align: center;
     justify-content: center;
     justify-items: center;
-    background-color: $colorsecundario;
+    background-color: map-get($colores, colorsecundario);
   }
   ul{
     list-style: none;
@@ -38,15 +42,15 @@
   
   .red{
     padding: 0px 305px 10px;
-    font-size: 34px;
+    font-size: map-get($font-size, fontsizered);
   }
 
   .tit{
-   font-size: 90px;
+   font-size: map-get($font-size, fontsizetit);
   }
   
   .tit2{
-   font-size: 30px;
+   font-size: map-get($font-size, fontsizetit2);
   }
   .row{
    --bs-gutter-x: 0;
@@ -62,7 +66,7 @@
   }
   
   .f2{
-  font-size: 70px;
+  font-size: map-get($font-size, fontsizef2);
   }
   
   .neg{
@@ -75,20 +79,20 @@
    padding: 10px 30px;
    text-decoration: none;
    border-radius: 5px;
-   background-color: $colorprincipal;
-   color: $colorsecundario;
+   background-color: map-get($colores, colorprincipal);
+   color: map-get($colores, colorsecundario);
 
    &:hover{
-     color: $colorterciario;
-     border: 1px solid $colorterciario;
-     background-color: $colorsecundario;
+     color: map-get($colores, colorterciario);
+     border: 1px solid map-get($colores, colorterciario);
+     background-color: map-get($colores, colorsecundario);
      transition: 2s;
    }
   }
 
   footer a:hover{
-  color: $colorprincipal;
-  background-color: $colorsecundario;
+  color: map-get($colores, colorprincipal);
+  background-color: map-get($colores, colorsecundario);
   }
   
   .imgtec{
@@ -105,8 +109,8 @@
   }
   
   .fond{
-   background-color: $colorprincipal;
-   color: $colorsecundario;
+   background-color: map-get($colores, colorprincipal);
+   color: map-get($colores, colorsecundario);
    margin: 5%;
    padding: 2%;
   }
@@ -118,12 +122,12 @@
   }
   
   .h2serv{
-  font-size: 50px;
+  font-size: map-get($font-size, fontsizeh2serv);
   }
   
   .pserv{
    margin: 30px 0px;
-    font-size: 20px;
+    font-size: map-get($font-size, fontsizepserv);
   }
   
   .turno{
@@ -132,17 +136,17 @@
    padding: 10px 30px;
    text-decoration: none;
    border-radius: 5px;
-   background-color: $colorsecundario;
-   color: $colorprincipal;
+   background-color: map-get($colores, colorsecundario);
+   color: map-get($colores, colorprincipal);
 
    &:hover{
-     border: 2px solid $colorsecundario;
+     border: 2px solid map-get($colores, colorsecundario);
      margin: 10px;
      padding: 10px 30px;
      text-decoration: none;
      border-radius: 5px;
-     background-color: $colorprincipal;
-     color: $colorsecundario;
+     background-color: map-get($colores, colorprincipal);
+     color: map-get($colores, colorsecundario);
      transition: 1.5s;
    }
   }
@@ -150,14 +154,14 @@
   
   .forms{
    width: 1111px;
-    color: $colorsecundario;
+    color: map-get($colores, colorsecundario);
     margin: 50px 450px;
     justify-content: center;
     text-align: center;
   }
   
   .forms2{
-   background-color: $colorprincipal;
+   background-color: map-get($colores, colorprincipal);
    border-radius: 10px;
    padding: 30px
   }
@@ -176,7 +180,7 @@
   }
   
   .h2cont{
-   font-size: 35px;
+   font-size: map-get($font-size, fontsizeh2cont);
    padding: 30px;
   }
   
@@ -196,9 +200,9 @@
   }
   
   .recua{
-   border: 2px solid $colorprincipal;
+   border: 2px solid map-get($colores, colorprincipal);
    width: 1111px;
-    color: $colorprincipal;
+    color: map-get($colores, colorprincipal);
     margin: 50px 450px;
     justify-content: center;
     text-align: center;
@@ -208,12 +212,12 @@
   .subsc{
    justify-content: center;
    text-align: center;
-   font-size: 30px;
+   font-size: map-get($font-size, fontsizesubsc);
    padding: 40px;
   }
   
   .em{
-   font-size: 20px;
+   font-size: map-get($font-size, fontsizeem);
   }
   .ims{
    height: 100%;
@@ -233,7 +237,7 @@
   }
   
   .bord{
-   border: 2px solid $colorterciario;
+   border: 2px solid map-get($colores, colorterciario);
   }
   
   .pad1{
@@ -627,3 +631,40 @@
     grid-area: imggrid;
   }
 
+  .booton1{
+    @extend %botonprincipal;
+    background-color: #d51709;
+    border-bottom: 2px solid #8c1007;
+}
+
+.booton2{
+    @extend %botonprincipal;
+    background-color: #096cd5;
+    border-bottom: 2px solid #053b75
+}
+
+.booton3{
+    @extend %botonprincipal;
+    background-color: #dc2c87;
+    border-bottom: 2px solid #961c5b
+}
+
+.botontec1{
+  border: $border;
+  margin: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: $backcolor;
+  color: $colortext;
+  }
+  
+  .botontec2{
+    border: $border;
+    margin: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $backcolor;
+    color: $colortext;
+  }
