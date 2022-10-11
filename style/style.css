@@ -417,6 +417,11 @@ footer a:hover {
  .indsub{
    font-size: 25px;
   }
+
+  li{
+    text-align: start;
+    
+  }
  }
   
   .foot{
@@ -641,6 +646,10 @@ footer a:hover {
   }
   .mainsserv{
     margin: 0px;
+  }
+  .imgserv{
+    width: 80%;
+    height: 10%;
   }
  } 
  
