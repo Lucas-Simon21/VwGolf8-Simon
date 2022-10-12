@@ -94,7 +94,6 @@ ul {
 li {
   float: left;
   text-align: center;
-  padding: 5px 20px;
 }
 
 .red {
@@ -115,7 +114,7 @@ li {
 }
 
 .widsub {
-  width: 70%;
+  width: 100%;
 }
 
 .imgs1 {
@@ -124,7 +123,7 @@ li {
 }
 
 .f2 {
-  font-size: 70px;
+  font-size: 68px;
 }
 
 .neg {
@@ -173,8 +172,7 @@ footer a:hover {
 }
 
 .imgserv {
-  width: 900px;
-  height: 580px;
+  width: 85%;
   margin: 25px;
 }
 
@@ -406,7 +404,7 @@ footer a:hover {
  }
  
  .tit{
-   font-size: 240%;
+   font-size: 280%;
  }
  
  .redtext{
@@ -596,6 +594,78 @@ footer a:hover {
   padding: auto;
  }
 
+  /* Celular Tecnologia */
+
+  @media screen and (max-width: 480px) {
+    .tecgrid{
+      display: grid;
+      grid-template-areas: 
+      "header"
+      "h1"
+      "tectex1" 
+      "tecimg1"
+      "tectex2"
+      "tecimg2" 
+      "footer";
+      grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+      grid-template-columns: 1fr;
+     }
+     .btn2{
+      margin: 0px;
+     }
+  
+     .heigtec{
+      width: 100%;
+      margin: 0px;
+     }
+  
+     .imgtec{
+      height: 90%;
+      width: 100%;
+     }
+     .tex{
+      height: 100%;
+     }
+     .imgtec1{
+      padding: 0px;
+      margin: 5% 0%;
+     }
+     .pad25{
+      padding: 5%;
+     }
+     .pad1{
+      padding: 0px;
+     }
+    }
+   /* Tablet Tecnologia */
+   @media screen and (min-width: 481px) and (max-width: 1511px) {
+    .tecgrid{
+      display: grid;
+      grid-template-areas: 
+      "header"
+      "h1"
+      "tectex1" 
+      "tecimg1"
+      "tectex2"
+      "tecimg2" 
+      "footer";
+      grid-template-rows: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+      grid-template-columns: 1fr;
+     }
+     .btn2{
+      margin: 0px;
+     }
+     .textecno{
+      padding:  3% 10%;
+     }
+     .pad25{
+      padding: 5% 9%;
+     }
+     .imgtec{
+      padding: 0% 9%;
+     }
+   }
+
 .sergrid{
   display: grid;
   grid-template-areas: 
@@ -661,32 +731,97 @@ footer a:hover {
  }
  }
 
-.contagrid{
+ .contagrid{
   display: grid;
   grid-template-areas: 
-  "header header"
-  "h1serv h1serv"
-  "h2grid h2grid"
-  "pgrid pgrid"
-  "imggrid imggird"
-  "footer footer";
-  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr;
-  grid-template-columns: repeat(2, 1fr);
+  "header"
+  "forms"
+  "recua"
+  "suscr"
+  "footer";
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 100vh;
  }
 
- .h1serv{
-  grid-area: h1serv;
+ .forms{
+  grid-area: forms;
  }
 
- .h2grid{
-  grid-area: h2grid;
+ .recua{
+  grid-area: recua;
  }
-.pgrid{
-  grid-area: pgrid;
+.suscr{
+  grid-area: suscr;
 }
-.imggrid{
-  grid-area: imggrid;
+
+ /* Celular Contacto */
+
+@media screen and (max-width: 480px) {
+  .contagrid{
+    grid-template-areas: 
+    "header"
+    "forms"
+    "recua"
+    "suscr"
+    "footer";
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+.forms{
+  width: 99%;
+  margin: 1px;
+  text-align: start;
+}
+
+.h2cont {
+  font-size: 30px;
+  padding: 1px;
+ } 
+
+.fm1{
+  margin: 1px;
+}
+.fm2{
+  margin: 1px;
+}
+.marcont{
+  margin: 1px;
+}
+
+.suscr{
+  width: 16%;
+}
+.recua{
+  width: 85%;
+  text-align: start;
+  margin: 0px;
+}
+.if{
+  width: 100%;
+}
+
+}
+ 
+ /* Tablet Contacto */
+ @media screen and (min-width: 481px) and (max-width: 1511px) {
+  .contagrid{
+    grid-template-areas: 
+  "header"
+  "forms"
+  "recua"
+  "suscr"
+  "footer";
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+ }
+ }
+
+ .textstar{
+  text-align: start;
+ }
+.ul{
+  width: 10%;
 }
 
 .booton1{
