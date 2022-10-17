@@ -1,0 +1,9 @@
+@mixin botontec1 ($border, $backcolor, $colortext) {
+    border: $border;
+    margin: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: $backcolor;
+    color: $colortext;
+}
