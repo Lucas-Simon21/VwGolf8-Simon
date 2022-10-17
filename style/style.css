@@ -106,7 +106,7 @@ li {
 }
 
 .tit2 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .row {
@@ -287,6 +287,7 @@ footer a:hover {
 }
 
 .textecno {
+  margin: 0px 10%;
   width: 77%;
   padding: 3% 0%;
 }
@@ -861,5 +862,13 @@ footer a:hover {
 
   .textstar{
     text-align: start;
+   }
+
+   .headcont{
+    width: 92%;
+   }
+
+   .padtec2{
+    padding: 1% 9%;
    }
   /*# sourceMappingURL=style.css.map */
